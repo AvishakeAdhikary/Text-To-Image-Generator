@@ -44,7 +44,9 @@ pip install Pillow
 
 Once you have installed the dependencies, you can run the code by running the following command:
 
-```python imagegenerator.py```
+```
+python imagegenerator.py
+```
 
 ## Usage
 
