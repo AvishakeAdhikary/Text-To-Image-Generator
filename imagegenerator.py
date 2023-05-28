@@ -1,6 +1,6 @@
 import tkinter
 import customtkinter as ctk
-
+from PIL import ImageTk
 import torch
 from torch import autocast
 from diffusers import StableDiffusionPipeline 
@@ -40,12 +40,12 @@ class App(ctk.CTk):
         self.progress.start()
 
         self.modelid = "CompVis/stable-diffusion-v1-4"
-        self.device = "cuda"
+        self.device = torch.device("cuda")
         self.pipe = StableDiffusionPipeline.from_pretrained(self.modelid, revision="fp16", torch_dtype=torch.float16, use_auth_token=self.authorization_token) 
         self.pipe.to(self.device) 
 
-        with autocast(device): 
-            self.image = pipe(textprompt, guidance_scale=8.5).images[0]
+        with autocast():
+            self.image = self.pipe(self.textprompt, guidance_scale=8.5).images[0]
             self.image.save('generatedimage.png')
             self.img = ImageTk.PhotoImage(self.image)
             
