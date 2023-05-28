@@ -14,7 +14,7 @@ class App(ctk.CTk):
         # configures window
         self.default_window_width = 1200
         self.default_window_height = 800
-        self.authorization_token = "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"
+        self.authorization_token = ""
 
         self.title("Image Generator")
         self.geometry(f"{self.default_window_width}x{self.default_window_height}")
