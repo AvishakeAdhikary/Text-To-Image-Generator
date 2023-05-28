@@ -67,7 +67,7 @@ When you run the code, you will be prompted to enter a text prompt. Once you hav
 
 ![image](https://github.com/AvishakeAdhikary/Text-To-Image-Generator/assets/32614982/633c43f7-65b6-42f7-adee-7f1d206534d6)
 
-### Contributing
+## Contributing
 
 We welcome contributions to this project! If you would like to contribute, please follow these steps:
 
