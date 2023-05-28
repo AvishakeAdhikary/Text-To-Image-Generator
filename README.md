@@ -26,11 +26,21 @@ Before running this application, you will need to have the following installed:
 
 You can install these dependencies using pip. For example:
 
-```pip install tkinter```
-```pip install customtkinter```
-```pip install diffusers```
-```pip install torch```
-```pip install Pillow```
+```
+pip install tkinter
+```
+```
+pip install customtkinter
+```
+```
+pip install diffusers
+```
+```
+pip install torch
+```
+```
+pip install Pillow
+```
 
 Once you have installed the dependencies, you can run the code by running the following command:
 
